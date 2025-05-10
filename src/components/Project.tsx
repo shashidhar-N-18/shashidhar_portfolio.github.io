@@ -1,73 +1,188 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
-import mock03 from '../assets/images/mock03.png';
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
+import githubLogo from '../assets/images/github.png'; // Placeholder GitHub logo
+import stockImage from '../assets/images/github.png'; // Placeholder stock image
 import '../assets/styles/Project.scss';
 
 function Project() {
-    return(
-    <div className="projects-container" id="projects">
-        <h1>Personal Projects</h1>
-        <div className="projects-grid">
-            <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
+    return (
+        <div>
+            {/* Google Ecosystem Section */}
+            
+
+            {/* Projects Section */}
+            <div className="projects-container" id="projects">
+
+                <div className="domain-container" id="google-ecosystem">
+                <h1>Domain: Google’s Ecosystem</h1>
+                <div className="domain-grid">
+                    {/* Google Search Card */}
+                    <div className="domain-card">
+                        <h2>Google Search</h2>
+                        <p>
+                            Concept Used: A* Search Algorithm, Trie Data Structure
+                            <br />
+                            Google Search uses advanced algorithms like the A* search algorithm to return the most relevant search results efficiently. Tries are used for fast search suggestions.
+                        </p>
+                        <a href="https://developers.google.com/search" target="_blank" rel="noreferrer">
+                            <button>Learn More</button>
+                        </a>
+                    </div>
+                    
+                    {/* YouTube Card */}
+                    <div className="domain-card">
+                        <h2>YouTube</h2>
+                        <p>
+                            Concept Used: Graph Algorithms, Collaborative Filtering
+                            <br />
+                            YouTube leverages graph algorithms to track user behavior and recommend videos. Collaborative filtering suggests videos based on similar user preferences.
+                        </p>
+                        <a href="https://support.google.com/youtube/answer/9409631?hl=en" target="_blank" rel="noreferrer">
+                            <button>Learn More</button>
+                        </a>
+                    </div>
+                    
+                    {/* Gmail Card */}
+                    <div className="domain-card">
+                        <h2>Gmail</h2>
+                        <p>
+                            Concept Used: Queueing Algorithms, Hashing
+                            <br />
+                            Gmail uses queueing algorithms to process incoming emails and employs hashing to index and quickly retrieve emails.
+                        </p>
+                        <a href="https://developers.google.com/gmail" target="_blank" rel="noreferrer">
+                            <button>Learn More</button>
+                        </a>
+                    </div>
+
+                    {/* Google Maps Card */}
+                    <div className="domain-card">
+                        <h2>Google Maps</h2>
+                        <p>
+                            Concept Used: Dijkstra’s Algorithm, Graph Theory
+                            <br />
+                            Google Maps uses Dijkstra’s algorithm for calculating the shortest path between locations using graph-based road data.
+                        </p>
+                        <a href="https://www.google.com/maps/about/" target="_blank" rel="noreferrer">
+                            <button>Learn More</button>
+                        </a>
+                    </div>
+
+                    {/* Google Cloud Card */}
+                    <div className="domain-card">
+                        <h2>Google Cloud</h2>
+                        <p>
+                            Concept Used: Distributed Hash Tables, Consistent Hashing
+                            <br />
+                            Google Cloud uses distributed hash tables and consistent hashing to manage massive data efficiently across servers.
+                        </p>
+                        <a href="https://cloud.google.com/storage" target="_blank" rel="noreferrer">
+                            <button>Learn More</button>
+                        </a>
+                    </div>
+
+                    {/* Google Assistant Card */}
+                    <div className="domain-card">
+                        <h2>Google Assistant</h2>
+                        <p>
+                            Concept Used: Natural Language Processing (NLP), Speech Recognition
+                            <br />
+                            Google Assistant employs NLP and speech recognition to interpret and respond to user commands in real-time.
+                        </p>
+                        <a href="https://assistant.google.com/" target="_blank" rel="noreferrer">
+                            <button>Learn More</button>
+                        </a>
+                    </div>
+
+                    {/* Nest Card */}
+                    <div className="domain-card">
+                        <h2>Nest (Smart Home Devices)</h2>
+                        <p>
+                            Concept Used: IoT Protocols, Queueing Algorithms
+                            <br />
+                            Nest devices use IoT protocols for device communication and employ queueing algorithms for managing multiple simultaneous device requests.
+                        </p>
+                        <a href="https://store.google.com/" target="_blank" rel="noreferrer">
+                            <button>Learn More</button>
+                        </a>
+                    </div>
+
+                    {/* Android Card */}
+                    <div className="domain-card">
+                        <h2>Android</h2>
+                        <p>
+                            Concept Used: Binary Search Trees (BST), Heap Data Structure
+                            <br />
+                            Android uses binary search trees for data indexing and heaps for efficient memory and process management.
+                        </p>
+                        <a href="https://developer.android.com/" target="_blank" rel="noreferrer">
+                            <button>Learn More</button>
+                        </a>
+                    </div>
+
+                    {/* Google Photos Card */}
+                    <div className="domain-card">
+                        <h2>Google Photos</h2>
+                        <p>
+                            Concept Used: Image Compression, Data Indexing
+                            <br />
+                            Google Photos uses image compression to save storage and indexing algorithms to quickly retrieve photos based on metadata.
+                        </p>
+                        <a href="https://photos.google.com/" target="_blank" rel="noreferrer">
+                            <button>Learn More</button>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div className="project">
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>High Speed Chase</h2></a>
-                <p>Designed, developed, and launched a 3D multiplayer racing game with C# and Unity. This is available on Itch.io for gamers worldwide to enjoy.</p>
-            </div>
-            <div className="project">
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><h2>Astro Raiders</h2></a>
-                <p>Developed and released a 2D shooting game with C# and Unity. This project is hosted on the Itch.io public marketplace.</p>
-            </div>
-            <div className="project">
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><h2>Datum: Integrated Learning Platform</h2></a>
-                <p>This is an online educational platform that provides high-quality, data science-focused learning resources in the Japanese language. I created the entire platform from scratch using Ruby on Rails.</p>
-            </div>
-            <div className="project">
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><img src={mock06} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><h2>WeManage: Real Estate Asset Management</h2></a>
-                <p>This mobile application allows realtors in Japan to securely manage their property information and view future income predictions. This app is built with Ruby on Rails and JavaScript.</p>
-            </div>
-            <div className="project">
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><img src={mock05} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><h2>COVID-19 Case Management</h2></a>
-                <p>Built official charts for COVID/vaccination tracking for an educational institution using JavaScript and the Google Sheets API v4. The dashboard served the university's leadership in their decision-making processes.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><img src={mock04} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><h2>Multiple Regression Property Analysis</h2></a>
-                <p>Analyzed the real estate market in Japan and predicted property prices by implementing statistical methods such as OLS and multi-regression analysis. This project leveraged Python and various libraries such as Pandas, NumPy, Matplotlib, and Scikit-Learn.</p>
-            </div>
-            <div className="project">
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><h2>Programs of Study</h2></a>
-                <p>Designed and developed a custom component for a CMS-based platform (e.g., 'Brightspot') using Java, Handlebars, and LESS. University students can find their majors of interest through this module.</p>
-            </div>
-            <div className="project">
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><h2>Transfer Evaluation Matrix</h2></a>
-                <p>Created an interactive CSV table generator with Java, Handlebars, and LESS. This project helps transfer students to quickly identify eligible credits.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><h2>Submeowrine</h2></a>
-                <p>Developed and released an Android mobile application using Java and Android Studio that runs a 2D shooting game.</p>
+                <h1>Personal Projects</h1>
+                <div className="projects-grid">
+                    <div className="project">
+                        <a href="https://github.com/shashidhar-N-18/CostCribAnalyzer" target="_blank" rel="noreferrer">
+                            <img src={githubLogo} className="zoom" alt="thumbnail" width="100%" />
+                        </a>
+                        <a href="https://github.com/shashidhar-N-18/CostCribAnalyzer" target="_blank" rel="noreferrer">
+                            <h2>CostCribAnalyzer</h2>
+                        </a>
+                        <p>Analyzed financial costs, optimized expenditure, and visualized data for better budget management.</p>
+                    </div>
+                    <div className="project">
+                        <a href="https://github.com/shashidhar-N-18/StockSage" target="_blank" rel="noreferrer">
+                            <img src={githubLogo} className="zoom" alt="thumbnail" width="100%" />
+                        </a>
+                        <a href="https://github.com/shashidhar-N-18/StockSage" target="_blank" rel="noreferrer">
+                            <h2>StockSage</h2>
+                        </a>
+                        <p>A stock market analyzer tool providing insights and predictions for optimal investment decisions using AI and ML models.</p>
+                    </div>
+                    <div className="project">
+                        <a href="https://github.com/shashidhar-N-18/Empowering-Women" target="_blank" rel="noreferrer">
+                            <img src={githubLogo} className="zoom" alt="thumbnail" width="100%" />
+                        </a>
+                        <a href="https://github.com/shashidhar-N-18/Empowering-Women" target="_blank" rel="noreferrer">
+                            <h2>Empowering Women</h2>
+                        </a>
+                        <p>A platform dedicated to empowering women with resources, articles, and educational tools aimed at enhancing social equality.</p>
+                    </div>
+                    <div className="project">
+                        <a href="#" target="_blank" rel="noreferrer">
+                            <img src={stockImage} className="zoom" alt="thumbnail" width="100%" />
+                        </a>
+                        <a href="#" target="_blank" rel="noreferrer">
+                            <h2>Breaking Cart</h2>
+                        </a>
+                        <p>Coming soon: A full-stack e-commerce website more than just a full-stack e-commerce website featuring Heisenberg.</p>
+                    </div>
+                    <div className="project">
+                        <a href="https://github.com/shashidhar-N-18/GenOs" target="_blank" rel="noreferrer">
+                            <img src={githubLogo} className="zoom" alt="thumbnail" width="100%" />
+                        </a>
+                        <a href="https://github.com/shashidhar-N-18/GenOs" target="_blank" rel="noreferrer">
+                            <h2>GenOs</h2>
+                        </a>
+                        <p>An AI assistant designed for fast and accurate OS queries, aiming to enhance user experience and improve productivity.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     );
 }
 
